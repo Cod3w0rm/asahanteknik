@@ -232,19 +232,26 @@
 }
 
 /* MOBILE MENU */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 260px;
-  height: 100vh;
-  background: var(--white);
-  padding: 90px 24px;
-  box-shadow: -10px 0 30px rgba(0,0,0,.2);
-  transition: right 0.3s ease;
-  z-index: 150;
-}
+.mobile-menu a {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  margin-bottom: 12px;
 
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  color: var(--dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+ .mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+ .mobile-menu a:hover {
+  color: var(--accent);
+}
 /* ACTIVE STATES */
 .mobile-menu.active {
   right: 0;

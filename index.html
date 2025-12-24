@@ -277,7 +277,41 @@ body.lock {
     display: flex;
   }
 }
+/* HIDE MOBILE MENU ON DESKTOP */
+.mobile-menu,
+.overlay,
+.burger {
+  display: none;
+}
+    /* ============================= */
+/* MOBILE NAV VISIBILITY CONTROL */
+/* ============================= */
 
+/* Hide mobile-only elements on desktop */
+.mobile-menu,
+.overlay,
+.burger {
+  display: none;
+}
+
+/* Enable mobile navigation only on small screens */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .overlay {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
   </style>
 </head>
 <body>

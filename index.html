@@ -221,6 +221,18 @@ footer {
   padding:40px 20px;
   color:var(--gray);
 }
+  .tiktok {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  background: #000000;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 200;
+}
 </style>
 </head>
 
@@ -244,10 +256,10 @@ footer {
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#about" onclick="toggleMenu()">Tentang</a>
+  <a href="#services" onclick="toggleMenu()">Layanan</a>
   <a href="#faq" onclick="toggleMenu()">FAQ</a>
-  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="#contact" onclick="toggleMenu()">Kontak</a>
 </div>
 
 <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
@@ -259,42 +271,79 @@ footer {
 
 <section id="about" class="about">
 <h2>Tentang Kami</h2>
-<p>Asahan Teknik (Astek) adalah perusahaan jasa teknik dan permesinan yang telah berdiri sejak 1999 di Baturetno, Wonogiri. Selama lebih dari dua dekade, kami tetap konsisten melayani berbagai kebutuhan perbaikan dan rekayasa teknis dengan kualitas yang terjaga.</p>
-<p>Beragam sektor industri telah mempercayakan kebutuhan teknis mereka kepada Astek, termasuk industri makanan & minuman, otomotif dan alat berat, pertanian, pabrikasi, hingga proyek konstruksi.</p>
+<p>Asahan Teknik (Astek) adalah perusahaan jasa teknik dan permesinan yang telah
+berdiri sejak 1999 di Baturetno, Wonogiri. Selama lebih dari dua dekade, kami tetap
+konsisten melayani berbagai kebutuhan perbaikan dan rekayasa teknis dengan kualitas
+yang terjaga. Keberlangsungan kami dalam industri merupakan bukti kemampuan kami
+dalam beradaptasi, menyelesaikan masalah secara efektif, dan memberikan solusi yang
+tepat untuk setiap pelanggan—mulai dari permasalahan sederhana hingga pekerjaan
+dengan tingkat kompleksitas tinggi.</p>
+<p>Beragam sektor industri telah mempercayakan kebutuhan teknis mereka kepada Astek,
+termasuk industri makanan & minuman, otomotif dan alat berat, pertanian,
+pabrikasi, hingga proyek konstruksi. Pengalaman panjang tersebut membentuk
+keahlian kami dalam memahami karakter setiap mesin, menyediakan solusi yang akurat,
+dan memastikan setiap pekerjaan berkontribusi pada kelancaran operasional pelanggan.
+Dengan komitmen terhadap mutu, ketelitian, dan inovasi, Astek terus menjadi mitra
+yang dapat diandalkan oleh berbagai kalangan industri.</p>
 </section>
 
 <section id="services">
 <h2>Layanan</h2>
 <div class="services-grid">
-<div class="service-card"><img src="https://images.unsplash.com/photo-1626502880734-a15f343afb44"><div><strong>Industri F&B</strong><p>Mesin gilingan, pencacah, dan mesin produksi industri makanan.</p></div></div>
-<div class="service-card"><img src="https://images.unsplash.com/photo-1666508330099-0c7c6ab0e332"><div><strong>Kendaraan & Alat Berat</strong><p>Servis truk, dump truck, backhoe, gardan, dan differential.</p></div></div>
+<div class="service-card"><img src="https://images.unsplash.com/photo-1626502880734-a15f343afb44"><div><strong>Industri F&B</strong><p>Pembuatan dan perbaikan mesin gilingan daging, mesin gilingan mi, pencacah,
+dan mesin industri lainnya.</p></div></div>
+<div class="service-card"><img src="https://images.unsplash.com/photo-1666508330099-0c7c6ab0e332"><div><strong>Kendaraan & Alat Berat</strong><p>Servis komponen truk dan alat proyek seperti As Bum, Gardan, Dump Truck,
+Backhoe, Boshing Pan, Case Differential, dan layanan las-bubut lainnya.</p></div></div>
 <div class="service-card"><img src="https://plus.unsplash.com/premium_photo-1661812376426-26e7af23fab5"><div><strong>Pertanian</strong><p>Perbaikan alat pra dan pasca panen.</p></div></div>
-<div class="service-card"><img src="https://images.unsplash.com/photo-1669951088662-bb813a273a7d"><div><strong>Pabrik & Proyek</strong><p>Mesin pencacah kayu, batu kalsit, dan mesin produksi.</p></div></div>
-<div class="service-card"><img src="https://images.unsplash.com/photo-1703181226035-1c26d7e5f6ee"><div><strong>Modifikasi Motor</strong><p>Korter, custom tromol, center kruk as, dan penggilapan.</p></div></div>
-<div class="service-card"><img src="https://images.unsplash.com/photo-1605701249987-f0bb9b505d06"><div><strong>Sparepart & Baut</strong><p>Baut besi, baja, stainless, dan komponen teknik.</p></div></div>
+<div class="service-card"><img src="https://images.unsplash.com/photo-1669951088662-bb813a273a7d"><div><strong>Pabrik & Proyek</strong><p>Perbaikan Gear, Mesin Pencacah Kayu Triplek, Mesin Batu Kalsit, dan berbagai
+Mesin Produksi.</p></div></div>
+<div class="service-card"><img src="https://images.unsplash.com/photo-1703181226035-1c26d7e5f6ee"><div><strong>Perbaikan & Modifikasi Motor</strong><p>Korter, Ganti Liner, Setting Klep, Bosh Noken As, Shock Baut dan Laker, Press
+T & Sekok, Ganti Stang, Center Kruk As, Custom Tromol, Penggilapan
+komponen, serta modifikasi lainnya</p></div></div>
+<div class="service-card"><img src="https://images.unsplash.com/photo-1605701249987-f0bb9b505d06"><div><strong>Sparepart & Baut</strong><p>Berbagai komponen kendaraan (Piston, Conrod, Bosh, Bearing, DLL), Baut
+besi, baja, stainless, dan kebutuhan teknik lainnya.</p></div></div>
 </div>
 </section>
 
 <section id="faq">
 <h2>FAQ</h2>
-<div class="faq-item"><strong>Asahan Teknik bergerak di bidang apa?</strong><p>Jasa teknik dan permesinan.</p></div>
-<div class="faq-item"><strong>Sejak kapan beroperasi?</strong><p>Sejak 1999.</p></div>
-<div class="faq-item"><strong>Apakah menerima pekerjaan custom?</strong><p>Ya.</p></div>
+<div class="faq-item"><strong>1. Asahan Teknik bergerak di bidang apa?</strong><p>Asahan Teknik (Astek) bergerak di bidang jasa teknik dan permesinan, meliputi perbaikan, pembuatan, dan modifikasi komponen mesin serta kendaraan untuk berbagai kebutuhan industri dan individu.
+</p></div>
+<div class="faq-item"><strong>2. Sejak kapan Asahan Teknik beroperasi?</strong><p>Asahan Teknik telah berdiri sejak tahun 1999 dan memiliki pengalaman lebih dari dua dekade dalam menangani berbagai permasalahan teknis di lapangan.</p></div>
+<div class="faq-item"><strong>3. Industri apa saja yang pernah dilayani?</strong><p>Kami melayani berbagai sektor industri, seperti makanan dan minuman (F&B), otomotif dan alat berat, pertanian, pabrikasi, serta proyek konstruksi dan industri umum.</p></div>
+<div class="faq-item"><strong>4. Apakah Asahan Teknik menerima pekerjaan custom atau non-standar?</strong><p>Ya. Kami terbiasa menangani pekerjaan custom dan permasalahan non-standar yang membutuhkan solusi teknis khusus, baik untuk kebutuhan industri maupun modifikasi kendaraan.</p></div>
+<div class="faq-item"><strong>5. Bagaimana kualitas pekerjaan di Asahan Teknik?</strong><p>Seluruh pekerjaan dikerjakan oleh mekanik berpengalaman dengan jam terbang tinggi. Kami mengutamakan ketelitian, fungsi, dan ketahanan hasil kerja.</p></div>
+<div class="faq-item"><strong>6. Apakah harga layanan di Asahan Teknik terjangkau?</strong><p>Kami menawarkan harga yang kompetitif dan relatif terjangkau, dengan tetap menjaga kualitas pekerjaan dan keandalan hasil.
+</p></div>
+<div class="faq-item"><strong>7. Apakah menyediakan sparepart atau komponen pendukung?</strong><p>Ya. Selain jasa perbaikan, kami juga menyediakan berbagai komponen kendaraan dan kebutuhan teknik, termasuk baut besi, baja, stainless, dan lainnya.</p></div>
+<div class="faq-item"><strong>8. Apakah bisa konsultasi sebelum pengerjaan?</strong><p>Tentu. Kami terbuka untuk konsultasi awal agar pelanggan mendapatkan solusi yang tepat sesuai kebutuhan dan kondisi di lapangan.</p></div>
+<div class="faq-item"><strong>9. Di mana lokasi Asahan Teknik?</strong><p>Kami berlokasi di Baturetno, Wonogiri, dan melayani pelanggan dari wilayah sekitar maupun luar daerah.</p></div>
+<div class="faq-item"><strong>10. Bagaimana cara menghubungi Asahan Teknik?</strong><p>Anda dapat menghubungi kami melalui email asahanteknik@gmail.com untuk kemitraan dan proyek kerjasama dan WhatsApp/telepon di 0877-1231-4123 dan 0878-8424-6030 untuk konsultasi dan pertanyaan seputar layanan kami.</p></div>
+  
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+<h2>Kontak</h2>
 <div class="contact-box">
-<p>Email: asahanteknik@gmail.com</p>
+<p>asahanteknik@gmail.com</p>
 <p>
-<a href="https://wa.me/6287712314123">0877-1231-4123</a><br>
-<a href="https://wa.me/6287884246030">0878-8424-6030</a>
+<a href="https://wa.me/6287712314123">0877-1231-4123 (Yusdianto)</a><br>
+<a href="https://wa.me/6287884246030">0878-8424-6030 (Ahmed)</a>
+</p>
+<p>
+  TikTok:
+  <a href="https://www.tiktok.com/@asahanteknik" target="_blank">
+    @asahanteknik
+  </a>
 </p>
 <iframe src="https://www.google.com/maps?q=Asahan+Teknik+Baturetno+Wonogiri&output=embed" width="100%" height="300" style="border:0;" loading="lazy"></iframe>
 </div>
 </section>
 
 <a class="whatsapp" href="https://wa.me/6287712314123">WhatsApp Us</a>
+<a class="tiktok" href="https://www.tiktok.com/@USERNAME" target="_blank">
+  TikTok
+</a>
 
 <footer>© 2025 Asahan Teknik (Astek)</footer>
 
